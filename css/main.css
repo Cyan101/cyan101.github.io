@@ -8,6 +8,7 @@ body  {
 h1 {
   display:  inline-block;
   text-align: center;
+  font-family: 'Abel', 'Times New Roman';
   font-size: 35px;
   margin: 0px 0px 0px 0px;
 }
@@ -15,6 +16,7 @@ h1 {
 a {
   text-decoration: none;
   color: #000;
+  font-family: 'Lato', 'Times New Roman';
 }
 
 nav {
@@ -28,7 +30,7 @@ nav {
 .header {
   display: grid;
   min-height: 50px;
-  grid-template-columns: 150px 16fr 60px 70px;
+  grid-template-columns: 150px 16fr 60px 120px;
   grid-template-areas:
   "nav-home nav-name nav-about nav-resume";
   grid-gap: 20px;
@@ -37,4 +39,4 @@ nav {
 .nav-1 {grid-area: nav-home}
 .nav-2 {grid-area: nav-name}
 .nav-3 {grid-area: nav-about}
-.nav-4 {grid-area: nav-resume}
+.nav-4 {grid-area: nav-resume; margin-right: 10px;}
