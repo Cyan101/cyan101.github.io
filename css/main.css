@@ -1,0 +1,40 @@
+body  {
+  min-height: 100%;
+  top: 0px;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+h1 {
+  display:  inline-block;
+  text-align: center;
+  font-size: 35px;
+  margin: 0px 0px 0px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav {
+  min-height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+.header {
+  display: grid;
+  min-height: 50px;
+  grid-template-columns: 150px 16fr 60px 70px;
+  grid-template-areas:
+  "nav-home nav-name nav-about nav-resume";
+  grid-gap: 20px;
+}
+
+.nav-1 {grid-area: nav-home}
+.nav-2 {grid-area: nav-name}
+.nav-3 {grid-area: nav-about}
+.nav-4 {grid-area: nav-resume}
