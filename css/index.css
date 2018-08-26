@@ -1,10 +1,45 @@
-.wrap {
-  width: 100%;
-  max-width: 1200px;
-}
-
 section {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.center {
+  margin-top: 100px;
+  max-width: 1500px; /* 400 each, 100 margin each */
+  background: red;
+  display: grid;
+  grid-gap: 100px;
+  grid-template-areas:
+  "grid-1 grid-2 grid-3";
+}
+
+.grid-item {
+  width: 400px;
+  height: 400px;
+  background-color: blue;
+  display: inline-block;
+}
+
+#grid-item-1 {grid-area: grid-1}
+#grid-item-2 {grid-area: grid-2}
+#grid-item-3 {grid-area: grid-3}
+
+@media (max-width: 1500px) {
+  .center {
+    background: green;
+    grid-template-areas:
+    "grid-1 grid-2"
+    "grid-3 grid-4";
+  }
+}
+
+@media (max-width: 1000px) {
+  .center {
+    background: orange;
+    grid-template-areas:
+    "grid-1"
+    "grid-2"
+    "grid-3";
+  }
 }
