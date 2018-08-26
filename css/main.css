@@ -46,12 +46,7 @@ nav, header {
 }
 
 @media (max-device-width: 500px) {
-  nav, header {
-    height: 120px;
-    line-height: 120px;
-    font-size: 40px;
-  }
-  h1 {
-    font-size: 50px;
+  html {
+    width: fit-content;
   }
 }
